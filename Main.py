@@ -31,7 +31,7 @@ class Stack:
     while temp is not None:
       ele += str(temp.data) + "=>"
       temp=temp.next
-    print (temp.data+"None")
+    print (ele+"None")
 
 
 # Do not change the following code
