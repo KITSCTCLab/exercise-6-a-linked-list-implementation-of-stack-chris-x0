@@ -2,13 +2,14 @@ class Node:
   def __init__(self, data):
     self.data = data
     self.next = None
-
+    
 
 class Stack:
   def __init__(self):
     self.head = None
 
   def push(self, data) -> None:
+    new = Node(data)
     if not self.head== None:
       new.next = self.head
       self.head=new
@@ -30,7 +31,7 @@ class Stack:
     while temp is not None:
       ele += str(temp.data) + "=>"
       temp=temp.next
-      print (temp.data+"None")
+    print (temp.data+"None")
 
 
 # Do not change the following code
